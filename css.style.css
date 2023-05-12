@@ -1,0 +1,72 @@
+h1 {
+    color: orange;
+    background-color: slategray;
+    width: 250px;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: Arial;
+    text-align: center;
+}
+
+p {
+    color: slategray;
+    background-color: orange;
+    width: 600px;
+    text-align: right;
+    line-height: 25px;
+    letter-spacing: 1px;
+    column-count: 2;
+    column-gap: 50px;
+}
+
+p.differ {
+    color: #1fae84;
+}
+
+ul {
+    /* border-width: 4px;
+    border-style: solid;
+    border-color: crimson;
+     */
+    /* border: 4px solid crimson; */
+    border-bottom: 3px dotted crimson;
+    border-left: 5px dashed crimson;
+    width: 550px;
+}
+
+li {
+    text-shadow: 2px 2px #e9e9e9;
+    list-style-type: none;
+
+}
+
+div p a {
+    color: purple;
+}
+
+/* attribuite selector */
+/* a[href="https://www.thenetninja.co.uk"] {
+    background-color: green;
+    color: white;
+    text-decoration: none
+} */
+
+a[href*="thenetninja"] {
+    background-color: green;
+    color: white;
+    text-decoration: none
+}
+
+/* ktory zawiea"*" */
+a[href*="google"] {
+    background-color: red;
+    color: white;
+    text-decoration: none
+}
+
+/* ktory konczy sie na  */
+a[href$=".pl"] {
+    background-color: yellow;
+    color: white;
+    text-decoration: none
+}
