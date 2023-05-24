@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* tworzenie sitaki */
+.grid-container {
+    display: grid;
+    border: 1px solid red;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: 200px 100px 100px;
+    grid-template-rows: 100px 80px;
+   
+   
+    /* grid-auto-flow: dense; */
+
+    /* pozycjonowanie */
+    justify-content: center; /*w poziomie*/
+    align-content: center;   /*w pionie*/
+
+    justify-items: center;
+    align-items: center; element rozciaga sie do calej komorki
+    
+
+}
+
+.item {
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.center {
+
+    justify-self: stretch;
+    align-self: stretch;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
