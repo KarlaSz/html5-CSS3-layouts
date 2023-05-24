@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+}
+
+/* tworzenie sitaki */
+.grid-container {
+    display: grid;
+    border: 1px solid red;
+    /* grid-template-columns: 200px 100px 50px; */
+    /* grid-template-columns: 1fr 2fr; */
+    /* min-height: calc(100vh - 30px); wlasciwosc standard CSS do mieszania miar, od 100% wys. przegladarki - 30 px */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(6, 1fr ); /*ile razy powtorzone, a pozniej co*/
+    /* grid-template-columns: [first] 1fr [druga] 1fr [trzecia] 1fr [sidebar] 1fr [end]; */
+    grid-template-rows: 40;
+   
+    
+}
+
+.item {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+/* wielkosc komorek */
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start:1;
+    grid-row-end: 4;
+    /* grid-column: sidebar / end; */
+
+}
+
+/* shorthand - skrot, start / koniec */
+.item5 {
+    /* grid-column: 1 / 4;  */
+    
+}
