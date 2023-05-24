@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+}
+
+
+/* tworzenie sitaki szablonu*/
+.grid-container {
+    display: grid;
+    border: 1px solid red;
+    height: 500px;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 100px 1fr 50px 30%; /*% dzialaja przy stalej wysokosci*/
+    grid-template-areas: 
+    "header sidebar"
+    "content sidebar"
+    "nav sidebar"
+    "footer footer";
+
+    /* luka pomiedzy kolumnami i rzedami */
+    /* grid-column-gap: 10px;
+    grid-row-gap: 20px; */
+    /* shorthand */
+    grid-gap: 10px;
+
+}
+
+.item {
+    border: 1px solid black;
+    /* margin: 5px; */
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
