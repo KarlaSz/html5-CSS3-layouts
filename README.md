@@ -44,3 +44,20 @@ schemat
 
  => reverse- zawraca elementu od tylu
 
+ // -
+ 5 typow marginesow 
+  => od 0 d- 5 z czego 1 najmniejszy,a 5 najwiekszy
+
+  schemat 
+  m{l/r/b/t/...(dla wszystkich)}-({sm/md/lg})-{1..5/auto}
+
+  paading podobnie
+p{l/r/b/t/...(dla wszystkich)}-{1..5/auto}
+
+//--
+sizing
+w-100 - width 100%
+w-50 to 50%
+w-75 75%
+
+//- fixed-top - wszystko inne nie jest widziane i jest nad i na cala szerokosc
