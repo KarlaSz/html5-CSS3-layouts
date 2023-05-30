@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <title>Komponenty bootstrap - projekt</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Źle sie czujesz? Boli Cie wszystko i masz problemy z układem trawinnym? Przyczytaj nasz blog i pomóż sobie!">
+        <meta name="keywords" content="zdrowie, uroda, sport">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <a href="#" class="navbar-brand">DobraKrzepa</a>
+            <button class="navbar-toggler" type="button" data-target="#navbar" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link tooltip1" data-toggle="tooltip" title="Zobacz co możesz zrobić dla siebie!">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" disabled aria-disabled="true" tabindex="-1">Sklep</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link tooltip2" data-toggle="tooltip" data-placement="bottom" title="Pisać tylko w <b>ważnych</b> sprawach!">Kontakt</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Szukaj" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
+                  </form>
+            </div>
+
+        </nav>
+        <!-- end navbar -->
+        
+        <div class="container pt-5">
+            <!-- carousel start -->
+                <div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                   <ol class="carousel-indicators">
+                    <li class="active" data-target="#main-carousel" data-slide-to="0"></li> 
+                    <li data-target="#main-carousel" data-slide-to="1"></li>
+                    <li data-target="#main-carousel" data-slide-to="2"></li>
+                   </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 h-100" src="/Bootstrap/projekt-dobrakrzepa/img/emma-simpson-mNGaaLeWEp0-unsplash.jpg" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Spacery to zdrowie!</h5>
+                            <p>Ruch uspokaja.</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img  class="d-block w-100 h-100" src="/Bootstrap/projekt-dobrakrzepa/img/jonathan-borba-lrQPTQs7nQQ-unsplash.jpg" alt="">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Treningi personalne</h5>
+                                <p>Wsłuchaj się w rytm swojego ciała.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img  class="d-block w-100 h-100" src="/Bootstrap/projekt-dobrakrzepa/img/toa-heftiba-hBLf2nvp-Yc-unsplash.jpg" alt="">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Naturalne masaże</h5>
+                                <p>Doświadczeni masażyści.</p>
+                            </div>
+                        </div>
+                        <a href=""></a>
+                    </div>
+
+                <a href="#main-carousel" class="carousel-control-prev"
+                data-slide="prev" role="button">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Cofnij</span>
+                </a>
+                <a href="#main-carousel" class="carousel-control-next" 
+                data-slide="next" role="button">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Kolejny</span>
+                </a>
+                </div>
+            <!-- carousel end -->
+
+            <!-- breadcrumb start -->
+            <nav class="mt-2" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+              </nav>
+            <!-- breadcrumb end -->
+
+            <!-- jumbotron start-->
+            <div class="jumbotron">
+                <h1 class="h3">DobraKrzepa wiedza o zdrowiu</h1>
+                <p class="lead"> DobraKrzepa to największy w Polsce portal dla dietetyków. W serwisie znajdziesz ponad 4000 artykułów.</p>
+                <hr class="my-4">
+                <h2 class="h4">Gluten, a cukrzyca</h2>
+                <p>Naukowcy z Kopenhagi od lat badali rozwój flory bakterii w układzie pokarmowym na wczesnym etapie życia. Dowiedli między innymi, że bakterie zasiedlające nasz układ pokarmowy, w znacznym stopniu dziedziczymy po matce, która przekazuje je nam podczas porodu</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Czytaj więcej</a>
+              </div>
+              <!-- jumbotron end  -->
+
+
+              <!-- navs start-->
+              <h2 class="text-center m-4">Zdrowie blisko Ciebie w pigułce</h2>
+              <div class="row mb-5">
+                <div class="col-3 mb-5">
+                  <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Styl życia</a>
+                    <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Przepisy</a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Uroda</a>
+                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Polecane</a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        <!-- collapse start --> 
+                        <div id="accordion">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                   Co to jest styl życia?
+                                  </button>
+                                </h5>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    Styl życia jest kategorią odnoszącą się nie tylko do życia grupowego, lecz jest to również manifestacja cech osobowościowych jednostki. Pojęcie to obejmuje nie tylko zachowania ludzkie, ale także mechanizmy leżące u podłoża tych zachowań, np. motywa cje, potrzeby, akceptowane wartości.                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Jaki jest zdrowy styl życia?
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    Zdrowy styl życia to przede wszystkim częste spożywanie warzyw i owoców, wybieranie tłuszczów pochodzenia roślinnego zamiast tłuszczów pochodzenia zwierzęcego, ograniczenie spożycia soli, niepalenie tytoniu, a także większa aktywność fizyczna.                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <!-- collapse end  -->
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <!-- media object start -->
+                        <div class="media">
+                            <img class="mr-3 d-block w-50 rounded-circle" src="img/jeff-sheldon-6MT4_Ut8a3Y-unsplash.jpg" alt="Generic placeholder image">
+                            <div class="media-body"> <br>
+                              <h5 class="mt-0">Pyszne dania</h5>
+                              Przepisy powstały z myślą o wszystkich miłośnikach dobrej kuchni. Każdego dnia podsuniemy Ci sposób na smaczny i oryginalny posiłek.
+                              <br>
+                              <button 
+                              data-toggle="popover" 
+                              class="btn btn-dark btn-md mt-3" 
+                              data-content="Więcej przepisów po zalogowaniu"
+                              title="Przepisy">
+                                Sprawdź
+                              </button>
+                            
+                            </div>
+                            </div> 
+                            
+                          </div>
+                          <!-- media object end -->
+                    
+                    
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore ipsum alias modi neque a enim atque debitis. Perferendis omnis quisquam iure, itaque quo assumenda enim voluptatem. Iste, sit voluptate.</div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore ipsum alias modi neque a enim atque debitis. Perferendis omnis quisquam iure, itaque quo assumenda enim voluptatem. Iste, sit voluptate.</div>
+                  </div>
+                </div>
+              </div>
+              <!-- navs end -->
+
+              
+
+
+         <!-- Bootstrap  -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+        <script>
+           $(function () {
+        $('.tooltip1').tooltip({
+            html:false
+        });
+        $('.tooltip2').tooltip({
+            html:true
+        });
+        });
+                
+        // czas przewijania slidera
+                setTimeout(() => {
+                    $('.tooltip1').tooltip('show')
+                }, 3000)
+
+                // popovers
+                $('[data-toggle="popover"]').popover()
+ 
+                // <!-- carousel -->
+            $('#main-carousel').carousel({
+                interval: 2500
+            })
+                </script>
+
+            
+    
+    </body>
+</html>
