@@ -44,7 +44,7 @@
         </nav>
         <!-- end navbar -->
         
-        <div class="container pt-5">
+      <div class="container pt-5">
             <!-- carousel start -->
                 <div id="main-carousel" class="carousel slide carousel-fade" data-ride="carousel">
                    <ol class="carousel-indicators">
@@ -54,24 +54,24 @@
                    </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100 h-100" src="/Bootstrap/projekt-dobrakrzepa/img/emma-simpson-mNGaaLeWEp0-unsplash.jpg" alt="">
+                            <img class="d-block w-100 rounded" src="/Bootstrap/projekt-dobrakrzepa/img/sporlab-XiZ7pRvCzro-unsplash.jpg" alt="">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Spacery to zdrowie!</h5>
-                            <p>Ruch uspokaja.</p>
+                            <h5 class="text-dark">Bieganie to zdrowie!</h5>
+                            <p class="text-dark">Ruch uspokaja.</p>
                         </div>
                         </div>
                         <div class="carousel-item">
-                            <img  class="d-block w-100 h-100" src="/Bootstrap/projekt-dobrakrzepa/img/jonathan-borba-lrQPTQs7nQQ-unsplash.jpg" alt="">
+                            <img  class="d-block w-100 rounded" src="/Bootstrap/projekt-dobrakrzepa/img/dan-gold-4_jhDO54BYg-unsplash.jpg" alt="">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Treningi personalne</h5>
+                                <h5>Treningi personalne i dieta</h5>
                                 <p>Wsłuchaj się w rytm swojego ciała.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img  class="d-block w-100 h-100" src="/Bootstrap/projekt-dobrakrzepa/img/toa-heftiba-hBLf2nvp-Yc-unsplash.jpg" alt="">
+                            <img  class="d-block w-100 rounded" src="/Bootstrap/projekt-dobrakrzepa/img/brooke-lark-4J059aGa5s4-unsplash.jpg" alt="">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Naturalne masaże</h5>
-                                <p>Doświadczeni masażyści.</p>
+                                <h5 class="text-dark">Naturalne masaże</h5>
+                                <p class="text-dark">Doświadczeni masażyści.</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -99,7 +99,7 @@
             <!-- breadcrumb end -->
 
             <!-- jumbotron start-->
-            <div class="jumbotron">
+             <div class="jumbotron">
                 <h1 class="h3">DobraKrzepa wiedza o zdrowiu</h1>
                 <p class="lead"> DobraKrzepa to największy w Polsce portal dla dietetyków. W serwisie znajdziesz ponad 4000 artykułów.</p>
                 <hr class="my-4">
@@ -188,8 +188,8 @@
 
 
               <!-- form start  -->
-              <h2 class="text-center m-4">Formularz kontaktowy</h2>
-              <form action="" novalidate id="contact-form" >
+              <h2 class="text-center m-4">Formularz zgłoszeniowy</h2>
+              <form action="" novalidate id="contact-form" class="bg-light p-3">
                 <div class="row">
                   <div class="col-md form-group">
                     <label for="name">Imię, Nazwisko</label>
@@ -258,7 +258,7 @@
                 </div>
                 <div class="row">
                   <div class="col">
-                    <div class="custom-control custom-checkbox">
+                    <div class="custom-control custom-checkbox mb-3">
                       <input type="checkbox" class="custom-control-input" name="regulamin" id="regulamin">
                       <label for="regulamin" class="custom-control-label" >Zapoznałem się z regulaminem</label>
                    
@@ -266,35 +266,211 @@
                      </div>
                 </div>
                
-                <button type="submit" class="btn btn-primary">
-                  Wyślij
-                </button>
-              </form>
-           
+                <!-- button  -->
+                <!-- <div class="btn-group mr-2 mb-3">
+                  <button type="submit" class="btn btn-primary">
+                    Wyślij
+                  </button>
+                  <button type="reset" class="btn btn-warning">
+                    Zresetuj formularz
+                  </button>
+                  <button type="reset" class="btn btn-danger">
+                   Usuń
+                  </button>
+                 </div> -->
+                      <!-- button  end-->
 
+                 <!-- dropdown  -->
+                 <div class="btn-group">
+                  <button type="submit" class="btn btn-primary">
+                    Wyślij
+                  </button>
+                  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
+                  <div class="sr-only">
+                    Rozwiń więcej opcji
+                  </div>
+                  <div class="dropdown-menu">
+                    <button type="reset" class="btn btn-warning dropdown-item">
+                      Zresetuj formularz
+                    </button>
+                    <div class="dropdown-divider"></div>
+                    <button type="reset" class="btn btn-danger dropdown-item">
+                     Usuń
+                    </button>
+                  </div>
+                </div>
+                     <!-- dropdown end -->
+
+              </form>
               <!-- form end -->
 
-              <!-- alert  -->
-              <div class="alert alert-success mt-4 alert alert-dismissible fade show">
-                Twoja wiadomosc zostala wysłana!
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-
+              <!-- card start -->
+              <h2 class="text-center mt-4 mb-4">Ostatnio na blogu</h2>
+              <div class="row mb-5">
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title"> Najlepsze wege dania</h5>
+                    <div class="badge bg-warning badge-pill text-white">Ważne!</div>
+                  </div>
+                  <img src="/Bootstrap/projekt-dobrakrzepa/img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="">
+                  <div class="card-body">
+                    <div class="card-text">Naukowcy odkryli nowe dania z buraka.</div>
+                    <a href="#" class="btn btn-primary btn-sm mt-4">Czytaj więcej</a>
+                  </div>
+                </div>
               </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header">
+                    <h5 class="card-title"> Najlepsze keto dania</h5>
+                    <div class="badge bg-info badge-pill text-white">Polecane!</div>
+                  </div>
+                  <img src="/Bootstrap/projekt-dobrakrzepa/img/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="">
+                  <div class="card-body">
+                    <div class="card-text">Azjatyckie sałatki z warzyw i mięsa.</div>
+                    <a href="#" class="btn btn-primary btn-sm mt-4">Czytaj więcej</a>
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                  <!-- <div class="card">
+                    <div class="card-header">
+                      <h5 class="card-title"> Najlepsze słone dania</h5>
+                      <div class="badge bg-success badge-pill text-white">Nowość!</div>
+                    </div>
+                    <img src="/Bootstrap/projekt-dobrakrzepa/img/monkgogi-samson-C0ba0-z1ZoI-unsplash.jpg" alt="">
+                    <div class="card-body">
+                      <div class="card-text">Naukowcy odkryli nowe dania z orzechów.</div>
+                      <a href="#" class="btn btn-primary btn-sm mt-4">Czytaj więcej</a>
+                    </div>
+                  </div> -->
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-secondary">Kategorie:</li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Dieta <br> i gotowanie
+                      <span class="badge badge-primary">10</span>
+                    </li>
+                    <li class="list-group-item">Żywność</li>
+                    <li class="list-group-item">Produkty</li>
+                    <li class="list-group-item disabled">Premium</li>
+                  </ul>
+                  <!-- pagination  -->
+                  <nav aria-label="Paginacja artykułów" class="mt-4 d-flex align-content-center justify-content-center">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Nowsze</span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Starsze</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+               <!-- pagination end -->
+              </div>
+               <!-- card end  -->
 
-              <!-- spinners start -->
-             <!-- na bootstrap5 -->
-                   <!-- spinners end -->
-                  <br>
-        </div>
-
+            <!-- modal  -->
+               <h2 class="text-center m-4">Kontakt</h2>
+               <button class="btn btn-info btn-block"
+               data-toggle="modal"
+               data-target="#my-modal">Kliknij, aby się z nami skontaktować!</button>
+                <div id="my-modal" class="modal fade tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog role="document"">
+                     <div class="modal-content">
+                      <div class="modal-header">
+                      <h5>Kontakt dla pasjonatów zdrowia</h5>  
+                    <button class="close" data-dismiss="modal" aria-label="Zamknij">
+                      <span aria-hidden="true">&times;</span>
+                    </button> 
+                    </div>
+                      <div class="modal-body">
+                       <div class="form-group">
+                        <label for="file">Załaduj plik</label>
+                        <input type="file" class="form-control" name="file" id="file">
+                       
+                       </div>
+                        <div class="progress">
+                          <div  style="width: 0%;"
+                          class="progress-bar progress-bar-animated progress-bar-striped bg-warning"
+                          role="progress-bar"
+                          aria-valuenow="0"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                          id="bar">
+                          
+                          </div>
+                        </div>
+                        <label for="contact-desc">Treść wiadomośći</label>
+                      <textarea name="" id="contact-desc" cols="30" rows="10" class="form-control"></textarea>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Anuluj</button>
+                        <button class="btn btn-success" id="contact-subtmit">Wyślij</button>
+                      </div>
+                     </div> 
+                    </div> 
+                </div>
+               <!-- modal  end-->
+ 
+               <!-- scrollpy  -->
+               <h2 class="text-center m-4">O nas</h2>
+               <div class="row">
+                  <div class="col-md-3">
+                    <div class="list-group" id="history-nav">
+                      <a href="#his1" class="list-group-item list-group-item-action">Początki</a>
+                      <a href="#his2" class="list-group-item list-group-item-action">Rozwój</a>
+                      <a href="#his3" class="list-group-item list-group-item-action">Transformacja</a>
+                    </div>
+                  </div>
+                  <div class="col-md-9">
+                    <div data-spy="scroll" data-target="#history-nav" style="height: 250px; overflow: scroll;">
+                      <h3 id="his1">Początki</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea id maiores autem voluptates voluptatum eligendi obcaecati cupiditate enim! Voluptatibus nam et placeat minima earum ipsam at molestias maiores saepe? Natus!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus animi maiores officiis, velit mollitia atque minus ipsam est voluptatum tenetur assumenda, pariatur excepturi ratione facere odit ullam quas, eius ut.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea id maiores autem voluptates voluptatum eligendi obcaecati cupiditate enim! Voluptatibus nam et placeat minima earum ipsam at molestias maiores saepe? Natus!
+                      </p>
+                      <h3 id="his2">Rozwój firmy</h3>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea id maiores autem voluptates voluptatum eligendi obcaecati cupiditate enim! Voluptatibus nam et placeat minima earum ipsam at molestias maiores saepe? Natus!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus animi maiores officiis, velit mollitia atque minus ipsam est voluptatum tenetur assumenda, pariatur excepturi ratione facere odit ullam quas, eius ut.</p>
+                      <h3 id="his3">Transformacja</h3>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus animi maiores officiis, velit mollitia atque minus ipsam est voluptatum tenetur assumenda, pariatur excepturi ratione facere odit ullam quas, eius ut.</p>
+                    </div>
+                  </div>
+               </div>
+               
+                
+              
+                <!-- scrollpy end -->
+               
+               <br> <br>
+              </div>     
          <!-- Bootstrap  -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
+
+        
         <script>
+          //progress bar
+          $('#contact-subtmit').click(() => {
+            $('#bar').css('width', '100%');
+           setTimeout(() => {
+            $('#my-modal').modal('hide')
+           }, 1000)
+          });
+
+          //tooltip
            $(function () {
         $('.tooltip1').tooltip({
             html:false
@@ -307,7 +483,7 @@
         // czas przewijania slidera
                 setTimeout(() => {
                     $('.tooltip1').tooltip('show')
-                }, 3000)
+                }, 10000)
 
                 // popovers
                 $('[data-toggle="popover"]').popover()
@@ -327,7 +503,7 @@
               }
             })
 
-            //ajax for spinners
+            //ajax for spinners and for alert
             // const spinner = $('#contact-status')
             //   spinner.removeClass('d-none')
             //   spinner.addClass('d-flex')
@@ -335,10 +511,17 @@
             // setTimeout(function() {
             //   spinner.addClass('d-none')
             //   spinner.removeClass('d-flex')
+
+            //   $(form).after(`<div class="alert alert-success mt-4 alert-dismissible fade show">
+            //     <button type="button" class="close" data-dismiss="alert">&times;</button>
+            //     <strong>Brawo!</strong> Twoja wiadomosc zostala wysłana!
+            //   </div>`)
             // }, 2000)
 
-            // return false;
+            // return false
+        
           });
+     
                 </script>
 
             
