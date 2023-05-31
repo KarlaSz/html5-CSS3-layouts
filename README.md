@@ -1,5 +1,12 @@
 # html.css
 
+My projects:
+1. https://karlasz.github.io/html5-and-CSS3-projects/Bootstrap/projekt-dobrakrzepa/project-bootstrap
+2. https://karlasz.github.io/html5-and-CSS3-projects/MarioBross-project/semantic-html5-index
+
+<hr>
+
+below used technologies and description
 <!-- bootstrap -->
 //-- 
 siatka (grid) - to elastyczny szkielet strony
