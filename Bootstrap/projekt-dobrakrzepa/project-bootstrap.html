@@ -353,9 +353,15 @@
                     <li class="list-group-item d-flex justify-content-between align-items-center">Dieta <br> i gotowanie
                       <span class="badge badge-primary">10</span>
                     </li>
-                    <li class="list-group-item">Żywność</li>
-                    <li class="list-group-item">Produkty</li>
-                    <li class="list-group-item disabled">Premium</li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Żywność 
+                      <span class="badge badge-primary">3</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">Produkty
+                      <span class="badge badge-primary">77</span>
+                    </li>
+                    <li class="list-group-item disabled d-flex justify-content-between align-items-center tooltip3" data-toggle="tooltip" title="Tylko dla B2B klientów">Premium
+                      <span class="badge badge-primary">5</span>
+                    </li>
                   </ul>
                   <!-- pagination  -->
                   <nav aria-label="Paginacja artykułów" class="mt-4 d-flex align-content-center justify-content-center">
@@ -485,6 +491,9 @@
             html:false
         });
         $('.tooltip2').tooltip({
+            html:true
+        });
+        $('.tooltip3').tooltip({
             html:true
         });
 
