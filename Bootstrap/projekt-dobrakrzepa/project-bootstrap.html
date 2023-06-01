@@ -14,8 +14,8 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-md bg-light navbar-light">
-            <a href="#" class="navbar-brand">DobraKrzepa</a>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+            <a href="#" class="navbar-brand- text-warning display-3 mr-5">DobraKrzepa</a>
             <button class="navbar-toggler" type="button" data-target="#navbar" data-toggle="collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,8 +36,8 @@
                 </ul>
 
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Szukaj" aria-label="Search">
-                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Szukaj</button>
+                    <input class="form-control mr-sm-2 btn-warning" type="search" placeholder="Szukaj" aria-label="Search">
+                    <button class="btn btn-warning text-dark my-2 my-sm-0" type="submit">Szukaj</button>
                   </form>
             </div>
 
@@ -93,7 +93,10 @@
             <!-- breadcrumb start -->
             <nav class="mt-2" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">Home</li>
+                  <li class="breadcrumb-item active text-primary" aria-current="page">Home</li>
+                  <li class="breadcrumb-item" aria-current="page">Blog</li>
+                  <li class="breadcrumb-item" aria-current="page">Sklep - wkrótce</li>
+                  <li class="breadcrumb-item" aria-current="page">Kontakt</li>
                 </ol>
               </nav>
             <!-- breadcrumb end -->
@@ -290,7 +293,7 @@
                     Rozwiń więcej opcji
                   </div>
                   <div class="dropdown-menu">
-                    <button type="reset" class="btn btn-warning dropdown-item">
+                    <button type="reset" class="btn btn-primary dropdown-item">
                       Zresetuj formularz
                     </button>
                     <div class="dropdown-divider"></div>
@@ -311,7 +314,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h5 class="card-title"> Najlepsze wege dania</h5>
-                    <div class="badge bg-warning badge-pill text-white">Ważne!</div>
+                    <div class="badge bg-danger badge-pill text-white">Ważne!</div>
                   </div>
                   <img src="img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" alt="">
                   <div class="card-body">
@@ -381,7 +384,7 @@
 
             <!-- modal  -->
                <h2 class="text-center m-4">Kontakt</h2>
-               <button class="btn btn-info btn-block"
+               <button class="btn btn-warning btn-block p-3"
                data-toggle="modal"
                data-target="#my-modal">Kliknij, aby się z nami skontaktować!</button>
                 <div id="my-modal" class="modal fade tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -423,8 +426,8 @@
                <!-- modal  end-->
  
                <!-- scrollpy  -->
-               <h2 class="text-center m-4">O nas</h2>
-               <div class="row">
+               <h2 class="text-center m-5">O nas</h2>
+               <div class="row mb-4">
                   <div class="col-md-3">
                     <div class="list-group" id="history-nav">
                       <a href="#his1" class="list-group-item list-group-item-action">Początki</a>
@@ -451,9 +454,15 @@
                 
               
                 <!-- scrollpy end -->
-               
-               <br> <br>
-              </div>     
+    
+              </div>    
+              
+              <!-- footer  -->
+              <footer class="mt-5 bg-dark text-warning text-center p-5">
+                <p class="copyright">Copyright 2023 - DobraKrzepa, made by KarolinaSz</p>
+            </footer>
+            <!-- footer  end -->
+
          <!-- Bootstrap  -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
