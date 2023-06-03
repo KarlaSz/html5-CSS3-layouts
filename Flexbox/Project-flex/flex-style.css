@@ -1,0 +1,16 @@
+body {
+    background: #f06d06;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pic2 {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 30px;
+}
+
+.pic1 {
+    width: 25px;
+    height: 25px;
+}
