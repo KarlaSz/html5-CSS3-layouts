@@ -13,7 +13,7 @@
  <body>
     <nav class="navbar">
         <div class="container">
-            <div class="logo">71WRO <img class="pic1" src="img/poland-map-country-land-svgrepo-com.svg" alt="Flaga Polski"></div>
+            <div class="logo">71WRO <img class="pic1" src="img/poland-svgrepo-com.svg" alt="Flaga Polski"></div>
             <ul class="nav">
                 <li>
                     <a href="#">Home</a>
@@ -30,13 +30,13 @@
 
     <header class="header">
         <div class="container">
-            <div>
+            <div class="text">
                 <h1>Przewodnik po Wrocławiu</h1>
                 <p>Strona prezentuje najbardziej popularne miejsca i atrakcje we Wrocławiu. 
                     Sprawdź, co warto zobaczyć. I rozpocznij swoją przygodę jako turysta!
                 </p>
             </div>
-            <img class="pic2" src="img/71wro2.jpg" alt="Miasto Wrocław rynek">
+            <img class="pic2" src="img/RDLP_Wrocław.svg" alt="Mapa Polski z Wrocławiem">
         </div>
     </header>
 
@@ -55,10 +55,88 @@
             <div class="box">
                 <h2>Od czego pochodzi nazwa miasta Wrocław?</h2>
                 <p>Według tradycji pierwszy gród w tym miejscu został założony w X w. przez czeskiego księcia Wratysława. Stąd przypuszczenie, że nazwa miasta Wrocław pochodzi od skróconej formy imienia założyciela.</p>
-                <a class="button" href="#">Czytaj więcęj</a>
+                <div><a class="button" href="#">Czytaj więcęj</a></div>
             </div>
         </div>
     </section>
+
+    <section class="form-contact">
+        <form action="" class="container">
+            <div>
+                <h2 class="title">Skontaktuj się z nami</h2>
+           <div>
+            <label for="name">Imię</label>
+            <input type="text" id="name">
+           </div>
+
+           <div>
+            <label for="name">Nazwisko</label>
+            <input type="text" id="name">
+           </div>
+
+            <div>
+                <label for="type">Temat</label>
+                  <select name="typ" id="type">
+                    <option value="value1">Jedzenie we Wrocławiu</option>
+                    <option value="value1">Atrakcje</option>
+                    <option value="value1">Zgłoś problem ze stroną</option>
+                    <option value="value1">Inne</option>
+                  </select>
+              </div>
+              <div>
+                <div>
+                  <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="custom-control-label" for="flexRadioDefault1">
+                    Kobieta
+                  </label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="custom-control-label" for="flexRadioDefault2">
+                    Mężczyzna
+                  </label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="custom-control-label" for="flexRadioDefault2">
+                      Dziecko
+                    </label>
+                  </div>
+              </div>
+              <div>
+                <label for="desc">
+                    <textarea name="desc" id="desc" cols="40" rows="5"></textarea>
+                </label>
+              </div>
+              <div>
+                <button type="submit" class="button">
+                    Wyślij
+                </button>
+              </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2 class="title">Galeria Wrocławia</h2>
+               <div class="pic3">
+                <img src="img/71wro.jpg" alt="">
+               </div>
+               <div class="pic3">
+                <img src="img/71wro2.jpg" alt="">
+               </div>
+               <div class="pic3">
+                <img src="img/" alt="">
+               </div>
+       
+    </section>
+
+
+
+    <footer>
+        <p class="copyright">Copyright 2023 - made by KarlaSz</p>
+    </footer>
 
 
 
