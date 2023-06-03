@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+}
+
+.flexbox-container {
+    border: 1px solid red;
+    padding: 3px;
+
+    display: flex;
+    height: 80vw;
+    /* align-items: stretch; //rozciagniecie */
+    /* align-items: flex-start; //przyklejajaca sie na gore */
+    /* align-items: flex-end; //przykleja sie do dolu */
+    align-items: center;
+    /* align-items: baseline; //wypozycjonowane do jednej lini tekstu */
+    /* justify-content: flex-start; //na lewo domyslnie */
+    /* justify-content: flex-end; //na prawo */
+    /* justify-content: space-between; */
+    justify-content: space-around; 
+    /* flex-wrap: wrap;*elementy ktore sie nie miesza sa przerzucane do nowej lini*/ 
+    /* flex-direction: row; */
+    /* flex-direction: column; //definijue ze ma sie wyswietlac w poziomie*/
+    /* flex-direction: row; */
+
+    flex-flow: row wrap;
+}
+
+.flexbox-container div {
+    border: 1px solid blue;
+    margin: 3px;
+    /* width: 200px; */
+    /* flex-basis: 200px; //to samo co width, ale to specjalna wartosc dla flex i ma wyzszy priorytet niz width */
+}
+
+.flexbox-container div.art1 {
+    /* flex: 1; //domyslnie zawsze dla kazdego */
+    /* flex-grow: 10;
+    flex-shrink: 10; */
+    flex-basis: 400px;
+    /* order: 3; */
+}
+
+.flexbox-container div.art2 {
+    /* flex: 3; //3 razy wiekszy */
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+    flex-basis: 400px;
+    /* order: 1; */
+}
+
+.flexbox-container div.art3 {
+    /* flex: 1; */
+    flex-basis: 400px;
+    /* order: 1; */
+}
+
+/* @media (min-width: 760px) {
+    .flexbox-container {
+        flex-direction: row;
+    }
+    .flexbox-container div{
+        flex-basis: 400px;
+    }
+} */
+
+/* //flex to skrot wartosci dla
+ flex-grow: ; //w jakim tempie ma sie zwiekszac element
+ flex-shrink: ; //w jakim tempie ma sie zmniejszac element
+ flex-basis: ; //to okreslania szerokosci, nadpisuje width */
