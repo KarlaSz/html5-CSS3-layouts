@@ -1,9 +1,9 @@
 body {
-    background: #8fa378;
+    background: #878b7a;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.5;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
@@ -13,17 +13,18 @@ body {
     padding: 0;
 }
 
-.pic2 {
-    width: 60vmin;
-    height: 50vmin;
-    border-radius: 30px;
-}
 
 .pic1 {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     margin: 5px 15px 0 0;
 }
+
+.pic {
+   width: 40vw;
+   height: 50vh;
+}
+
 
 h1, h2 {
     margin-bottom:  15px;
@@ -36,11 +37,11 @@ ul {
 .container {
     max-width: 1100px;
     margin:  0 auto;
-    padding: 0 30px;
+    padding: 20px 30px;
 }
 
 .navbar {
-    background: #547929;
+    background: #1b1b1b;
     color: white;
     height: 60px;
 }
@@ -57,7 +58,7 @@ font-size: 18px;
 }
 
 .navbar a:hover {
-color: #000000;
+color: #878b7a;
 }
 
 .navbar .container {
@@ -76,6 +77,119 @@ color: #000000;
 }
 
 .header {
-    background-color: #8a8b7f;
-    color: black;
+    background-color: #6a7351;
+    color: white;
+    min-height: 400px;
 }
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img {
+    max-width: 400px;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+
+.header img:hover {
+    opacity: 1;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.box {
+    flex: 1;
+    background: #6a7351;
+    border-radius: 10px;
+    margin: 20px 15px ;
+    box-shadow: 0 2px 7px #1b1b1b;
+    padding: 15px;
+}
+
+.button {
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+    color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+section.form-contact {
+    background-color: #6a7351;
+}
+
+.title {
+    text-align: center;
+}
+
+h2.formtitle {
+    font-size: 35px;
+}
+
+button.button {
+    width: 100px;
+    border: 0;
+}
+
+button.button:hover {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.copyright {
+    background-color: #1b1b1b;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.gallery img{
+    max-width: 450px;
+    border-radius: 30px;
+}
+
