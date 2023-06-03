@@ -1,8 +1,9 @@
 # html.css
 
 My projects:
-1. https://karlasz.github.io/html5-and-CSS3-projects/Bootstrap/projekt-dobrakrzepa/project-bootstrap
-2. https://karlasz.github.io/html5-and-CSS3-projects/MarioBross-project/semantic-html5-index
+1. https://karlasz.github.io/html5-and-CSS3-projects/Flexbox/Project-flex/flexbox-project
+2. https://karlasz.github.io/html5-and-CSS3-projects/Bootstrap/projekt-dobrakrzepa/project-bootstrap
+3. https://karlasz.github.io/html5-and-CSS3-projects/MarioBross-project/semantic-html5-index
 
 <hr>
 
