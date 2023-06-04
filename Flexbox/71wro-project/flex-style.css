@@ -243,7 +243,7 @@ select#type {
 }
 
 select#type:focus {
-    border: 4px dashed #4b4b4b;
+    border: 2px dashed #4b4b4b;
     outline: none;
 }
 
@@ -255,12 +255,11 @@ button.button {
 }
 
 input[type=radio] {
-    border: 0px;
     width: 5%;
     height: 1em;
 }
 
-input[type='radio']:checked:after {
+input[type='radio']:after {
     background-color: red;
 }
 
@@ -304,6 +303,10 @@ textarea#desc {
     font-size: 20px;
 }
 
+textarea#desc:focus {
+    border: 2px dashed #363636;
+    outline: none;
+}
 
 .buttonform {
     width: 250px;
