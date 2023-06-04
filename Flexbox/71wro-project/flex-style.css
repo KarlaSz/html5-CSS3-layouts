@@ -122,11 +122,9 @@ color: #c3eb40;
     border-radius: 30px;
     box-shadow: 0 2px 7px #1b1b1b;
     padding: 15px;
-}
-
-div.box {
     margin: 15px;
 }
+
 
 .button {
     background-color: white;
@@ -157,6 +155,10 @@ a.button:hover {
     .boxes .container {
         display: block;
         text-align: center;
+    }
+
+    .box {
+        margin-bottom: 30px;
     }
 
     .header .container img {
@@ -334,4 +336,71 @@ button.buttonform:hover {
 ::selection {
     background-color: red;
     color: white;
+}
+
+.popup {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    width: 100vw;
+    top:  0;
+    left: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.popup__img {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup__close {
+    position: fixed;
+    top: 32px;
+    right: 92px;
+    font-size: 80px;
+    background-color: transparent;
+    color: rgb(255, 255, 255, 0.7);
+    cursor: pointer;
+    border: none;
+}
+
+.popup__close,
+.popup__arrow {
+    opacity: 0.5;
+    transition: opacity(0.3);
+}
+
+.popup__arrow {
+    position: absolute;
+    top: 40%;
+    font-size: 80px;
+    height: 80px;
+    width: 80px;
+    line-height: 50px;
+    border-radius: 50px;
+    border: none;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+.popup__arrow:hover,
+.popup__close:hover {
+    opacity: 1;
+}
+
+.popup__arrow--left {
+    left: 2%;
+}
+
+.popup__arrow--right {
+    right: 2%;
 }
