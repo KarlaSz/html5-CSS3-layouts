@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="flex-style.css">
+    <meta name="description" content="Blog o Wrocławiu dla turystów. Co robić i co zwiedzać we Wrocławiu?">
+	<meta name="keywords" content="Wrocław, Polska, miasto, atrakcje">
+	<meta name="author" content="KaroSz">
+    <title>Flexbox - projekt - popularne miejsca we Wrocławiu</title>
+  </head>
+ <body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">71WRO <img class="pic1" src="img/poland-svgrepo-com.svg" alt="Flaga Polski"></div>
+            <ul class="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#pictures">Galeria</a>
+                </li>
+                <li>
+                    <a href="#formmain">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <div class="text">
+                <h1>Przewodnik po Wrocławiu</h1>
+                <p>Strona prezentuje najbardziej popularne miejsca i atrakcje we Wrocławiu. 
+                    Sprawdź, co warto zobaczyć. I rozpocznij swoją przygodę jako turysta!
+                </p>
+            </div>
+            <img class="pic2" src="img/RDLP_Wrocław.svg" alt="Mapa Polski z Wrocławiem">
+        </div>
+    </header>
+
+    <section class="boxes">
+        <div class="container">
+            <div class="box">
+                <h2>TOP Atrakcje we Wrocławiu</h2>
+                <p>Wrocław to jedno z najpiękniejszych i najpopularniejszych miast w Polsce. Można do niego przyjechać na weekend w ciemno i nigdy człowiek nie będzie się nudził. Ogrom atrakcji, zabytków, klimatycznych restauracji sprawia, że zawsze odkrywa się coś nowego. </p>
+                <a class="button" href="#">Czytaj więcęj</a>
+            </div>
+            <div class="box">
+                <h2>Z czego jest znany Wrocław?</h2>
+                <p>Stolica Dolnego Śląska to miasto festiwali. Największy z nich, znany na całym świecie, Międzynarodowy Festiwal "Wratislavia Cantans" od 40 lat skupia wybitnych artystów, dyrygentów i orkiestry.</p>
+                <a class="button" href="#">Czytaj więcęj</a>
+            </div>
+            <div class="box">
+                <h2>Od czego pochodzi nazwa miasta Wrocław?</h2>
+                <p>Według tradycji pierwszy gród w tym miejscu został założony w X w. przez czeskiego księcia Wratysława. Stąd przypuszczenie, że nazwa miasta Wrocław pochodzi od skróconej formy imienia założyciela.</p>
+                <div><a class="button" href="#">Czytaj więcęj</a></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="pictures">
+        <div class="container">
+            <h2 class="title">Galeria Wrocławia</h2>
+       
+        <ul class="gallery">
+            <li class="thumbnail">
+                <img src="img/71wro.jpg" alt="Miasto Wrocław zdjęcie rynku">
+            </li>
+            <li class="thumbnail">
+                <img src="img/71wro2.jpg" alt="Miasto Wrocław zdjęcie cetrum w sepii">
+            </li>
+            <li class="thumbnail">
+                <img src="img/71wro3.jpg" alt="Tramwaj Wrocławski">
+            </li>
+            <li class="thumbnail">
+                <img src="img/71wro4.jpg" alt="Wrocław nocą">
+            </li>
+            <li class="thumbnail">
+                <img src="img/71wro5.jpg" alt="Czarno-białe zdjęcie Wrocławia">
+            </li>
+            <li class="thumbnail">
+                <img src="img/71wro6.jpg" alt="Kałuża we Wrocławiu na tle kostki">
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="pictures">
+        <div class="container">
+            <h2 class="title">Skontaktuj się z nami</h2>
+
+        <form action="" id="formmain">
+            <div>
+                
+           <div>
+            <label for="name">Imię</label>
+            <input type="text" id="name" placeholder="wpisz swoje imię">
+           </div>
+
+           <div>
+            <label for="name">Nazwisko</label>
+            <input type="text" id="name" placeholder="wpisz swoje nazwisko">
+           </div>
+
+        
+              <div>
+                <div>
+                  <input  type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label  for="flexRadio1">
+                    Kobieta
+                  </label>
+                </div>
+                <div >
+                  <input type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label for="flexRadio2">
+                    Mężczyzna
+                  </label>
+                </div>
+                <div>
+                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label for="flexRadio2">
+                      Dziecko
+                    </label>
+                  </div>
+              </div>
+
+              <div>
+                <label for="type">Temat</label>
+                  <select name="typ" id="type">
+                    <option value="value1">Jedzenie we Wrocławiu</option>
+                    <option value="value1">Atrakcje</option>
+                    <option value="value1">Zgłoś problem ze stroną</option>
+                    <option value="value1">Inne</option>
+                  </select>
+              </div>
+              <div>
+                <label for="desc">
+                    <textarea name="desc" id="desc" cols="40" rows="5" placeholder="tutaj napisz do nas wiadomość..."></textarea>
+                </label>
+              </div>
+              <div>
+                <button type="submit" class="button">
+                    Wyślij
+                </button>
+              </div>
+              <div class="phone">
+                <p>lub zadzwóń na darmową infolinię <br> Telefon: <a href="tel:+48654543432">+48 654-543-432</a></p>
+            </div>
+            </div>  
+        </form>
+        </div>
+    </section>
+
+    <section class="join">
+        <div class="container">
+            <h2>Newsletter!</h2>
+        <p>Zapisz się i bądź na bieżąco z nowościami na temat przewodnika o Wrocławiu.</p>
+            <form>
+                <input type="email" name="email" placeholder="wpisz swój email" required>
+                <div>
+                    <button type="submit" class="buttonform">
+                        Zapisuję się
+                    </button>
+                  </div>
+                <!-- <button type="submit" class="button">
+                    Wyślij
+                </button> -->
+            </form>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p class="copyright">Copyright 2023 - made by KarlaSz</p>
+    </footer>
+
+
+
+    <!-- training yt https://www.youtube.com/watch?v=3YW65K6LcIA -->
+ </body>
+</html>
