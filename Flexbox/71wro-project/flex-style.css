@@ -231,6 +231,12 @@ h2.formtitle {
     border-radius: 30px;
 }
 
+
+.thumbnail img:focus,
+.thumbnail img:focus-visible {
+border: 5px solid #1b1b1b;
+}
+
 .thumbnail:hover {
 transform: scale(1.1);
 }
@@ -259,10 +265,6 @@ button.button {
 input[type=radio] {
     width: 5%;
     height: 1em;
-}
-
-input[type='radio']:after {
-    background-color: red;
 }
 
 button.button:hover {
@@ -340,6 +342,7 @@ button.buttonform:hover {
 
 .popup {
     position: fixed;
+    animation: fadeIn 0.3s;
     background: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
     height: 100vh;
@@ -359,6 +362,10 @@ button.buttonform:hover {
 
 .popup.hidden {
     display: none;
+}
+
+.popup.fade-out {
+    animation: fadeOut 0.3s both;
 }
 
 .popup__close {
@@ -403,4 +410,9 @@ button.buttonform:hover {
 
 .popup__arrow--right {
     right: 2%;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
