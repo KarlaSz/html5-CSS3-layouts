@@ -98,15 +98,37 @@
                 
            <div>
             <label for="name">Imię</label>
-            <input type="text" id="name">
+            <input type="text" id="name" placeholder="wpisz swoje imię">
            </div>
 
            <div>
             <label for="name">Nazwisko</label>
-            <input type="text" id="name">
+            <input type="text" id="name" placeholder="wpisz swoje nazwisko">
            </div>
 
-            <div>
+        
+              <div>
+                <div>
+                  <input  type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label  for="flexRadio1">
+                    Kobieta
+                  </label>
+                </div>
+                <div >
+                  <input type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label for="flexRadio2">
+                    Mężczyzna
+                  </label>
+                </div>
+                <div>
+                    <input type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label for="flexRadio2">
+                      Dziecko
+                    </label>
+                  </div>
+              </div>
+
+              <div>
                 <label for="type">Temat</label>
                   <select name="typ" id="type">
                     <option value="value1">Jedzenie we Wrocławiu</option>
@@ -116,28 +138,8 @@
                   </select>
               </div>
               <div>
-                <div>
-                  <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                  <label class="custom-control-label" for="flexRadioDefault1">
-                    Kobieta
-                  </label>
-                </div>
-                <div class="custom-control custom-radio">
-                  <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                  <label class="custom-control-label" for="flexRadioDefault2">
-                    Mężczyzna
-                  </label>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input class="custom-control-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="custom-control-label" for="flexRadioDefault2">
-                      Dziecko
-                    </label>
-                  </div>
-              </div>
-              <div>
                 <label for="desc">
-                    <textarea name="desc" id="desc" cols="40" rows="5"></textarea>
+                    <textarea name="desc" id="desc" cols="40" rows="5" placeholder="tutaj napisz do nas wiadomość..."></textarea>
                 </label>
               </div>
               <div>
@@ -145,8 +147,29 @@
                     Wyślij
                 </button>
               </div>
+              <div class="phone">
+                <p>lub zadzwóń na darmową infolinię <br> Telefon: <a href="tel:+48654543432">+48 654-543-432</a></p>
             </div>
+            </div>  
         </form>
+        </div>
+    </section>
+
+    <section class="join">
+        <div class="container">
+            <h2>Newsletter!</h2>
+        <p>Zapisz się i bądź na bieżąco z nowościami na temat przewodnika o Wrocławiu.</p>
+            <form>
+                <input type="email" name="email" placeholder="wpisz swój email" required>
+                <div>
+                    <button type="submit" class="buttonform">
+                        Zapisuję się
+                    </button>
+                  </div>
+                <!-- <button type="submit" class="button">
+                    Wyślij
+                </button> -->
+            </form>
         </div>
     </section>
 
