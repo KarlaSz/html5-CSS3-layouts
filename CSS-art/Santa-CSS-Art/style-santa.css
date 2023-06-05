@@ -20,37 +20,12 @@ body {
     background-color: var(--color-bg);
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
-}
-
-h1 {
-    color: var(--color-white);
-    font-size: 40px;
-}
-
-
-.welcome {
-    display: block;
-    height: 20vh;
-    width: 100vw;
-    padding: 30px 0 30px 0;
-    text-align: center;
-    background-color: var(--color-bg);
-}
-
-p {
-    color: var(--color-white);
-    font-size: 20px;
-    font-style: italic;
-}
-
-
-main {
-    display: flex;
+        display: flex;
     justify-content: center;
-    margin: auto auto;
-    height: 100vh;
-    width: 100vw;
+    align-content: center;
+    
 }
+
 .santa {
     height: 20vh;
     width: 30vh;
@@ -381,15 +356,6 @@ main {
     width: 130%;
 }
 
-.copyright {
-    background-color: var(--color-bg);
-    color: white;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-}
 
 .santa:hover .santa__body__hands {
     transform: rotate(0deg);
@@ -399,3 +365,12 @@ main {
     transform: scaleX(-1) rotate(120deg);
 }
 
+.santa:hover .santa__beard_mouth {
+    overflow: visible;
+}
+.santa:hover .santa__beard_mouth:after {
+    transform: scaleX(-1);
+    border-radius: 60% 60% 90% 90%  ;
+    height: 80%;
+    top: 40%;
+}
