@@ -324,7 +324,7 @@ main {
 
 
 .santa__legs {
-    height: 70%;
+    height: 80%;
     width: 100%;
     display: flex; 
 }
@@ -334,8 +334,10 @@ main {
     height: 100%;
     width: 100%;
     margin: 0 10%;
-    border-radius: 100% 100% 50% 50%;
+    border-radius:70% 70% 45% 45% / 20% 20% 50% 50%;
 }
+
+.santa__leg::after {}
 
 .santa__legs_boots {
     height: 70%;
@@ -344,7 +346,7 @@ main {
 }
 
 .santa__legs__shoe {
-  background-color: var(--color-brown);
+  background-color: var(--color-black);
   height: 40%;
   width: 100%;
   margin: 0 15%;
@@ -356,9 +358,9 @@ main {
     background-color:var(--color-black);
     height: 70%;
     width: 150%;
-    border-radius: 20% 20% 25% 25%;
+    border-radius: 20% 40% 25% 25%;
     position: absolute;
-    top: 75%;
+    top: 65%;
 
 }
 
