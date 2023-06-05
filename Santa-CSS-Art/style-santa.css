@@ -229,7 +229,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+    position: ab;
     bottom: -30px;
 }
 
@@ -239,6 +239,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
 }
 
 .santa__body__dot {
@@ -249,18 +250,25 @@ main {
     margin: 12px auto;
     padding: 20px;
     border-radius: 100%;
-    position: relative;
+}
+
+.santa__body__dot:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
 }
 
 .santa__body__stripe {
     background-color: var(--color-black);
     height: 5%;
     width: 100%;
-    position: absolute;
     left: 10%;
     bottom: 15%;
     z-index: 2;
     border-radius: 2% 2% 33% 33% ;
+}
+
+.santa__body__stripe::after {
     position: absolute;
     top: 85%;
     left: 0;
@@ -327,41 +335,50 @@ main {
     height: 80%;
     width: 100%;
     display: flex; 
+    justify-content: center;
 }
 
 .santa__leg {
-    background-color: var(--color-red);
     height: 100%;
     width: 100%;
     margin: 0 10%;
     border-radius:70% 70% 45% 45% / 20% 20% 50% 50%;
+    position: relative;
 }
 
-.santa__leg::after {}
-
-.santa__legs_boots {
-    height: 70%;
-    width: 100%;
-    display: flex;
-}
-
-.santa__legs__shoe {
-  background-color: var(--color-black);
-  height: 40%;
-  width: 100%;
-  margin: 0 15%;
-  border-radius: 30% 30% 25% 25% / 35% 35% 20% 20%;
-  position: relative;
-}
-
-.santa__boots__stripe {
-    background-color:var(--color-black);
-    height: 70%;
-    width: 150%;
-    border-radius: 20% 40% 25% 25%;
+.santa__leg:after {
+    background-color: var(--color-red);
+    border-radius: 20% 0% 20% 20% / 0% 0% 20% 20%;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
     position: absolute;
-    top: 65%;
+    bottom: 15%;
+    width: 100%;
+}
 
+.santa__shoe {
+    background-color: var(--color-black);
+    height: 40%;
+    right: -2%;
+    position: absolute;
+    border-radius: 90% 90% 50% 50% / 40% 40% 50% 0;
+    top: 80%;
+    width: 105%;
+    z-index: 1;
+}
+
+.santa__shoe:after {
+    background-color: var(--color-black);
+    border-radius: 50% 50% 0 0 / 80% 80% 0 0;
+    content: "";
+    display: block;
+    height: 70%;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    width: 130%;
 }
 
 .copyright {
