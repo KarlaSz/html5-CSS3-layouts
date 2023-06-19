@@ -28,7 +28,10 @@ body {
 .content {
     display: grid;
     place-items: center;
-    text-align: justify;
+}
+
+p {
+    text-align: center, justify;
 }
 
 .content a {
