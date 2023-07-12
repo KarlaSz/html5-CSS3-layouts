@@ -1,0 +1,60 @@
+:root {
+    --main: #ab531dae;
+    --sec: #326c89;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main);
+    background: linear-gradient(to right top, var(--sec), var(--main));
+    width: 100vw; 
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 66%;
+    height: 66%;
+    background: rgba(0, 0, 0, 0.65);
+    background: linear-gradient(to right top, rgba(3, 36, 43, 0.55), rgb(0, 0, 0, 0.30));
+    border-radius: 30px;
+    position: relative;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.bg__img {
+    position: absolute;
+}
+
+.bg__img--button {
+    opacity: 0.4 ;
+    top: 0;
+    right: 60%;
+    height: 30vh;
+    animation: slideDown 9s linear infinite;
+}
+
+.bg__img--dots {
+    top: 0;
+    left: 50%;
+    height: 75vh;
+}
+
+@keyframes slideDown {
+    from{transform: translateY(-30vh)}
+    to{transform: translateY(100vh)}
+}
+
+@keyframes rotate {
+    from{transform: : rotate(20deg);}
+}
+
