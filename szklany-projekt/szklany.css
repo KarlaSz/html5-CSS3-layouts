@@ -1,6 +1,7 @@
 :root {
-    --main: #ab531dae;
-    --sec: #326c89;
+    --main: rgba(229, 186, 160, 0.925);
+    --orange: #c36628ec;
+    --blue: #326c89;
 }
 
 * {
@@ -10,43 +11,199 @@
 }
 
 body {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--main);
-    background: linear-gradient(to right top, var(--sec), var(--main));
+    background: linear-gradient(to right top, var(--blue), var(--main));
     width: 100vw; 
     height: 100vh;
     overflow: hidden;
 }
 
 .container {
-    width: 66%;
-    height: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    max-height: 90vh;
     background: rgba(0, 0, 0, 0.65);
-    background: linear-gradient(to right top, rgba(3, 36, 43, 0.55), rgb(0, 0, 0, 0.30));
+    background: linear-gradient(to right top, rgba(3, 36, 43, 0.85), rgb(0, 0, 0, 0.30));
     border-radius: 30px;
+    padding: 30px;
     position: relative;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    overflow: auto;
 }
+
+
 
 .bg__img {
     position: absolute;
 }
 
 .bg__img--button {
-    opacity: 0.4 ;
+    opacity: 0.3;
     top: 0;
-    right: 60%;
-    height: 30vh;
-    animation: slideDown 9s linear infinite;
+    right: 55%;
+    height: 20vh;
+    animation: slideDown 15s linear infinite;
 }
 
 .bg__img--dots {
     top: 0;
-    left: 50%;
-    height: 75vh;
+    left: 65%;
+    height: 65vh;
+    animation: rotate 25s linear infinite;
+}
+
+.bg__img--logo {
+    left: 0;
+    top: 50%;
+    opacity: 0.25;
+    width: 40%;
+    transform: translate(-45%, -50%) rotate(20deg);
+}
+
+main {
+    display: flex;
+}
+
+section:first-child {
+    margin-right: 42px;
+}
+
+header {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 38px;
+    padding: 0px 0px 15px 0px
+}
+
+p {
+    font-size: 18px;
+    font-weight: 200;
+    padding-bottom: 12px;
+}
+
+ul li {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 0 20px 10px 12px;
+    margin-left: 18px;
+}
+
+
+a {
+    color: var(--orange);
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--orange);
+    background: linear-gradient(90deg, transparent, var(--orange));
+    transition: width 0.3s;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+.logo {
+    width: 150px;
+    margin-right: 30px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.people {
+    display: flex;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.person {
+    margin-right: 35px;
+}
+
+.person__img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    background: var(--blue);
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.person__img img {
+    width: 100%;
+}
+
+
+.person__name {
+    display: block;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--blue), rgba(229, 186, 160, 0.8));
+    color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.person:last-child {
+    align-self: flex-end;
+}
+
+button {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 20px 0;
+    color: white;
+    font-weight: 700;
+    width: 200px;
+    background: var(--blue);
+    background: linear-gradient(to right top, var(--blue), rgba(255, 255, 255, 0.6));
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button:focus {
+    outline: white;
+}
+
+button::after {
+    width: 50px;
+    height: 150%;
+    position: absolute;
+    left: -70px;
+    top: -15px;
+    content: "";
+    background: rgba(255, 255, 255, 0.4);
+    transition: transform 0.5s;
+    transform: rotate(20deg);
+}
+
+button:hover::after {
+    transform: translateX(300px) rotate(20deg);
 }
 
 @keyframes slideDown {
@@ -55,6 +212,253 @@ body {
 }
 
 @keyframes rotate {
-    from{transform: : rotate(20deg);}
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
 }
 
+@media screen and (max-width: 1100px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .bg__img {
+        position: absolute;
+    }
+
+    img.bg__img--button {
+        opacity: 0.3;
+        top: 0;
+        right: 55%;
+        height: 8vh;
+        animation: slideDown 15s linear infinite ;
+    }
+
+    img.bg__img--dots {
+        top: 0;
+        left: 65%;
+        height: 20vh;
+        animation: rotate 25s linear infinite;
+    }
+
+    img.bg__img--logo {
+        left: 0;
+        top: 50%;
+        opacity: 0.25;
+        width: 50%;
+        transform: translate(-45%, -50%) rotate(20deg);
+    }
+   
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        max-width: 800px;
+    }
+
+    .bg__img {
+        position: absolute;
+    }
+
+    .people {
+        display: block;
+    }
+
+    main {
+        display: block;
+    }
+
+    img.bg__img--button {
+        opacity: 0.3;
+        top: 0;
+        right: 55%;
+        height: 20vh;
+        animation: slideDown 15s linear infinite ;
+    }
+
+    img.bg__img--dots {
+        top: 26px;
+        left: 65%;
+        height: 20vh;
+        animation: rotate 25s linear infinite;
+    }
+
+    img.bg__img--logo {
+        left: 0;
+        top: 50%;
+        opacity: 0.25;
+        width: 50%;
+        /* transform: translate(-45%, -50%) rotate(20deg); */
+    }
+
+    .person{
+        padding-bottom: 20px;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 815px){
+    .container {
+        max-width: 670px;
+    }
+   
+    .bg__img {
+        position: absolute;
+    }
+
+    .people {
+        display: flex;
+    }
+
+    main {
+        display: block;
+    }
+
+    img .bg__img--button {
+        opacity: 0.3;
+        top: 0;
+        right: 55%;
+        height: 10vh;
+        animation: slideDown 15s linear infinite;
+    }
+
+    img.bg__img--dots {
+        top: 25px;
+        left: 65%;
+        height: 20vh;
+        animation: rotate 25s linear infinite;
+    }
+
+    img.bg__img--logo {
+        left: 0;
+        top: 30%;
+        opacity: 0.25;
+        width: 30%;
+        transform: translate(-45%, -50%) rotate(20deg);
+    }
+
+    .person{
+        padding-bottom: 20px;
+    }
+
+
+    .person__name {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container {
+        max-width: 510px;
+    }
+
+    .bg__img {
+        position: absolute;
+    }
+
+    .people {
+        display: flex;
+    }
+
+    main {
+        display: block;
+    }
+
+    img.bg__img--button {
+        opacity: 0.3;
+        top: 0;
+        right: 55%;
+        height: 8vh;
+        animation: slideDown 15s linear infinite;
+    }
+
+    img.bg__img--dots {
+        top: 0;
+        left: 65%;
+        height: 10vh;
+        animation: rotate 25s linear infinite;
+    }
+
+    img.bg__img--logo {
+        left: 0;
+        top: 20%;
+        opacity: 0.25;
+        width: 50%;
+        transform: translate(-45%, -50%) rotate(20deg);
+    }
+
+
+
+    .person{
+        padding-bottom: 20px;
+    }
+
+
+    .person__name {
+        text-align: left;
+    }
+   
+}
+
+@media screen and (max-width: 525px) {
+    .container {
+        max-width: 350px;
+        position: relative;
+        display: block;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .conatiner .logo img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .people {
+        display: block;
+    }
+
+    main {
+        display: block;
+    }
+
+    .bg__img {
+        position: absolute;
+    }
+
+    img.bg__img--button {
+        opacity: 0.3;
+        top: 0;
+        right: 55%;
+        height: 8vh;
+        animation: slideDown 15s linear infinite;
+    }
+
+    img.bg__img--dots {
+        top: 0;
+        left: 65%;
+        height: 8vh;
+        animation: rotate 25s linear infinite;
+    }
+
+    img.bg__img--logo {
+        left: 0;
+        top: 20%;
+        opacity: 0.25;
+        width: 50%;
+        transform: translate(-45%, -50%) rotate(20deg);
+    }
+
+    .person{
+        padding-bottom: 20px;
+    }
+
+    .person__name {
+        text-align: left;
+    }
+   
+}
