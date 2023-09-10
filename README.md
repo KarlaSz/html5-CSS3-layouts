@@ -1,13 +1,13 @@
 # html.css
 
 My projects:
-1. https://karlasz.github.io/html5-CSS3-layouts/Flexbox/71wro-project/71wro
-2. https://karlasz.github.io/html5-CSS3-layouts/szklany-projekt/index
-3. https://karlasz.github.io/html5-CSS3-layouts/CSS-art/Santa-CSS-Art/santa
-4. https://karlasz.github.io/html5-CSS3-layouts/CSS-art/Pisanka-CSS-Art/pisanka
-5. https://karlasz.github.io/html5-CSS3-layouts/Bootstrap/projekt-dobrakrzepa/project-bootstrap
-6. https://karlasz.github.io/html5-CSS3-layouts/MarioBross-project/semantic-html5-index
-7. https://karlasz.github.io/html5-CSS3-layouts/Grid/architekt-Grid/grid-layout
+1. [Przewodnik po Wrocławiu -Flexbox](https://karlasz.github.io/html5-CSS3-layouts/Flexbox/71wro-project/71wro)
+2. [Medical glass project -flexbox](https://karlasz.github.io/html5-CSS3-layouts/szklany-projekt/index)
+3. [CSS art Santa](https://karlasz.github.io/html5-CSS3-layouts/CSS-art/Santa-CSS-Art/santa)
+4. [CSS art Easter Egg](https://karlasz.github.io/html5-CSS3-layouts/CSS-art/Pisanka-CSS-Art/pisanka)
+5. [Blog - DobraKrzepa, Bootstrap](https://karlasz.github.io/html5-CSS3-layouts/Bootstrap/projekt-dobrakrzepa/project-bootstrap)
+6. [MarioBross](https://karlasz.github.io/html5-CSS3-layouts/MarioBross-project/semantic-html5-index)
+7. [Grid - Archiect](https://karlasz.github.io/html5-CSS3-layouts/Grid/architekt-Grid/grid-layout)
 
 <hr>
 
