@@ -21,29 +21,56 @@
 
     <!-- Your custom script here -->
     <script type="text/babel">
+      /* class Names extends React.Component {
+        render() {
+          const names = ['Kevin', 'Karla', 'Oscar']
+          const namesList = names.map(name => <li>{name}</li>)
+          const showNames = false
+
+          return <div> {showNames ? <ul>{namesList}</ul> : 'Brak imion'}</div>
+        }
+      }*/
+      //function komponent
+      const Names = () => {
+        const [showNameState, setShowNameState] = React.useState(true) //hook ze statem
+        const names = ['Kevin', 'Karla', 'Oscar']
+        const namesList = names.map(name => <li key={name}>{name}</li>)
+        //const showNames = true
+        const toggleNames = () => {
+          //showNames
+          setShowNameState(!showNameState)
+        }
+
+        return (
+          <div>
+            {showNameState ? <ul>{namesList}</ul> : 'Brak imion'}
+            <button onClick={toggleNames}>Toggle names</button>
+          </div>
+        )
+      }
+      //class komponent
       class Headline extends React.Component {
+        state = {
+          title: 'ReacjJs',
+        }
         render() {
           //JSX
-          const title = "ReactJs";
-          const names = ["Kevin", "Karla", "Oscar"];
-          const namesList = names.map((name) => <li>{name}</li>);
-          const showNames = true;
+          //  const title = 'ReactJs'
+          const changeTitle = () => this.setState({ title: 'VueJs' })
 
           return (
             <div>
-              <h1>Hello {title}</h1>
+              <h1>Hello {this.state.title}</h1>
               <p>Lorem ipsum...</p>
-              <ul>
-                <li>{names[0]}</li>
-                {showNames ? namesList : null}
-              </ul>
+              <Names />
+              <button onClick={changeTitle}>Change title</button>
             </div>
-          );
+          )
           // return React.createElement('h1', null, 'Hello Karla') //nieczytalne dobrze
         }
       }
       //ReactDOM.render(<h1>Hello React</h1>, document.querySelector('#app')); //prosty zapis bez nazwy komponentu
-      ReactDOM.render(<Headline />, document.querySelector("#app"));
+      ReactDOM.render(<Headline />, document.querySelector('#app'))
     </script>
   </body>
 </html>
