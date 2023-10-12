@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React App</title>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+
+    <!-- Load Babel Don't use it on production-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- Your custom script here -->
+    <script type="text/babel">
+      class Headline extends React.Component {
+        render() {
+          //JSX
+          const title = 'ReactJs'
+          const names = ['Kevin', 'Karla', 'Oscar']
+          const namesList = names.map(name => <li>{name}</li>)
+          const showNames = true
+
+          return (
+            <div>
+              <h1>Hello {title}</h1>
+              <p>Lorem ipsum...</p>
+              <ul>
+                <li>{names[0]}</li>
+                {showNames ? namesList : null}
+              </ul>
+            </div>
+          )
+          // return React.createElement('h1', null, 'Hello Karla') //nieczytalne dobrze
+        }
+      }
+      //ReactDOM.render(<h1>Hello React</h1>, document.querySelector('#app')); //prosty zapis bez nazwy komponentu
+      ReactDOM.render(<Headline />, document.querySelector('#app'))
+    </script>
+  </body>
+</html>
