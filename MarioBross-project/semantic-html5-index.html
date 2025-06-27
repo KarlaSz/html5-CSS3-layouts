@@ -2,101 +2,63 @@
 <html lang="pl">
 
 <head>
-
-    <meta name="description" content="Strona o marioclub html5">
-    <meta charset="utf-8">
-    <meta name="keyword" content="semantic, html5">
-    <title>Marioclub semnatic html5</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="mario-style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Strona fanów Mario Bros – dołącz do Marioclub!">
+  <meta name="keywords" content="Mario, Marioclub, gry, Nintendo, platformówka, Super Mario">
+  <title>Marioclub | Mario Bros Fan Site</title>
+  <link rel="stylesheet" href="mario-style.css">
 </head>
+
 <body>
-<!--     
-    <main>
-        For the main content of a webpage, unique to that page
-    </main>
-    <section>
-        Defines a certain section of a webpage e.g. blog list, contact info.
-    </section>
+  <header>
+    <h1>Marioclub</h1>
+  </header>
 
+  <section class="banner">
+    <img src="img-mario/banner.png" alt="Marioclub welcome banner">
+    <div class="welcome">
+      <h2>Welcome to <br><span>Marioclub</span></h2>
+    </div>
+  </section>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="/join.html" class="join">Join the club</a></li>
+      <li><a href="/news.html">Latest news</a></li>
+      <li><a href="/games.html">New games</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
     <article>
-        Defines a bit of content which makes up article e.g a blog post.
-    </article> -->
+      <h2>It's-a me, Mario!</h2>
+      <p>Witaj w MarioClub — miejscu, gdzie zaczyna się każda przygoda z grzybkami, monetami i ratowaniem księżniczek! Mario to nie tylko postać z gry — to legenda świata gamingu, która od ponad 30 lat bawi kolejne pokolenia graczy.</p>
 
-    <!-- <aside>
-        Defines some content related to something else e.g. similar bloggs
-    </aside>
+      <p>Skacz przez poziomy, pokonuj Goomby i Bowsera, zbieraj złote monety i wskakuj do zielonych rur, by odkrywać sekrety Mushroom Kingdom. U nas dowiesz się o najnowszych grach, wydarzeniach i trikach prosto ze świata Mario!</p>
 
-    <header>
-        For the header of a wbebsite which contains nav, side title etc
-    </header>
+      <p>Dołącz do fanów z całego świata i zostań częścią kultowej rodziny Marioclub. Let's-a go!</p>
+    </article>
 
-    <footer>
-        For the footer of wa wbesite
-    </footer> -->
+    <ul class="images">
+      <li><img src="img-mario/thumb-1.png" alt="mario thumb-1"></li>
+      <li><img src="img-mario/thumb-2.png" alt="mario thumb-2"></li>
+    </ul>
+  </main>
 
-    <header>
-        <h1>Marioclub</h1>
-    </header>
- 
+  <section class="join">
+    <h2>Dołącz do Marioclub!</h2>
+    <p>Zapisz się do naszej społeczności fanów Mario i bądź na bieżąco z nowościami, wydarzeniami i ekskluzywnymi materiałami ze świata Mario. Czekają na Ciebie niespodzianki, konkursy i dużo dobrej zabawy!</p>
+    <form>
+      <input type="email" name="email" placeholder="Wpisz swój email i dołącz" required>
+      <input class="button" type="submit" value="Zapisz się">
+    </form>
+  </section>
 
-    <section class="banner">
-        <img src="img-mario/banner.png" alt="Marioclub welcome banner">
-        <div class="welcome">
-            <h2>Welcome to <br><span>Marioclub</span></h2>
-        </div>
-    </section>
-
-    <nav class="main-nav">
-        <ul>
-            <li><a href="/join.html" class="join">Join the club</a></li>
-            <li><a href="/news.html">Latest news</a></li>
-            <li><a href="/games.html">New games</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <article>
-            <h2>It's a me, Mario</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Mollitia quo maiores blanditiis illo repellat numquam? 
-                Maiores nam distinctio animi consectetur eaque sapiente nesciunt deleniti, 
-                quaerat incidunt, sint esse ullam accusantium. Lorem ipsum dolor sit amet, 
-                consectetur adipisicing elit. 
-                Libero quaerat maiores, rerum accusamus ex corporis totam dolores voluptatum 
-                officiis cupiditate voluptatibus expedita animi quae doloribus neque culpa ea quas. Praesentium!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Quas in obcaecati et nulla asperiores necessitatibus, praesentium rerum qui laboriosam adipisci? 
-                Quas, aperiam suscipit ducimus blanditiis eligendi esse similique asperiores placeat?</p>
-        </article>
-        <ul class="images">
-            <li><img src="img-mario/thumb-1.png" alt="mario thumb-1"></li>
-            <li><img src="img-mario/thumb-2.png" alt="mario thumb-2"></li>
-        </ul>
-    </main>
-
-    <section class="join">
-        <h2>Join Today!</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consectetur necessitatibus 
-            quasi veniam rem maiores, debitis, quam blanditiis quas laudantium sed, odio soluta 
-            inventore magni unde expedita repellat delectus quo.</p>
-            <form>
-                <input type="email" name="email" placeholder="type email & hit enter" required>
-                <input class="button" type="submit" name="submit" id="">
-            </form>
-    </section>
-
-    <footer>
-        <p class="copyright">Copyright 2023 Marioclub and made by KaroSz</p>
-    </footer>
-
-
-
+  <footer>
+    <p class="copyright">© 2023 Marioclub | Projekt by KaroSz</p>
+  </footer>
 </body>
-
 
 </html>
