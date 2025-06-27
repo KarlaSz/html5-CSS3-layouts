@@ -23,6 +23,16 @@ header h1 {
     border-radius: 36px;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #33a746;
+  text-decoration: underline;
+}
+
 .banner {
     /* position: relative; */
     text-align: center;
